@@ -1,0 +1,10 @@
+{
+  "name" : "io-transactor",
+  "version" : "0.1.0",
+  "description" :"A nodejs c++ addon for interprocess communication.",
+  "author" : "Daniel Hood",
+  "repository"   :  {
+     "type" : "git",
+     "url"  : "https://github.com/hooddanielc/io-transactor.git"
+  }
+}
