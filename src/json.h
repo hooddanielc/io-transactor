@@ -12,6 +12,8 @@
 #include <utility>
 #include <vector>
 
+#include <iostream>
+
 namespace dj {
 
   /* A sum of the value types allowable in JSON. */

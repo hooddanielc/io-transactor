@@ -1,10 +1,18 @@
 {
   "name" : "io-transactor",
   "version" : "0.1.0",
-  "description" :"A nodejs c++ addon for interprocess communication.",
+  "description" :"A nodejs C++ addon for interprocess communication.",
   "author" : "Daniel Hood",
-  "repository"   :  {
+  "repository": {
      "type" : "git",
      "url"  : "https://github.com/hooddanielc/io-transactor.git"
+  },
+  "main": "./index.js",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
   }
 }

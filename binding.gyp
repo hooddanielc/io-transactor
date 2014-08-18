@@ -25,6 +25,36 @@
           },
         }],
       ]
+    },
+    {
+      "target_name": "io_transactor_test",
+      "sources": [
+        "src/test.cc"
+      ],
+      "include_dirs": [
+        "include",
+      ],
+      "dependencies": [
+        "binding.gyp:io_transactor",
+      ],
+      "cflags": [
+        "-std=c++11",
+        "-stdlib=libc++"
+      ],
+      "cflags!": [ "-fno-exceptions" ],
+      "cflags_cc!": [ "-fno-exceptions" ],
+      "conditions": [
+        ["OS==\"mac\"", {
+          "xcode_settings": {
+            "OTHER_CPLUSPLUSFLAGS" : [
+              "-stdlib=libc++",
+              "-std=c++11",
+              "-mmacosx-version-min=10.7"
+            ],
+            "GCC_ENABLE_CPP_EXCEPTIONS": "YES"
+          },
+        }],
+      ]
     }
   ]
 }
